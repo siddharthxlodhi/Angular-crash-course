@@ -1,0 +1,40 @@
+
+
+.header {
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  text-align: center;
+  color: #06704e;
+  position: relative;
+  background-color: #45a049;
+}
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.header-content {
+  position: relative;
+  z-index: 1;
+}
+.header a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+.header a:hover {
+  color: #FFD700;
+}
+.logo {
+  display: block;
+  margin: 0 auto 20px;
+  width: 100px;
+}
+

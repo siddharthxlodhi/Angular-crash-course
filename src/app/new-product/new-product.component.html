@@ -1,0 +1,33 @@
+
+<div class="container">
+  <h1>Add New Product</h1>
+  <form >
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" id="title" [(ngModel)]="product.title" name="title">
+    </div>
+    <div class="form-group">
+      <label for="description" >Description</label>
+      <textarea id="description" name="description" [(ngModel)]="product.description" rows="4"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="category" >Category</label>
+      <input type="text" id="category" name="category">
+    </div>
+    <div class="form-group">
+      <label for="image" >Image URL</label>
+      <input type="text" id="image" [(ngModel)]="product.image" name="image">
+    </div>
+    <div class="form-group">
+      <label for="price"  >Price</label>
+      <input type="number" id="price" [(ngModel)]="product.price" name="price" step="0.01">
+    </div>
+    <div class="form-group">
+      <label for="rating" >Rating</label>
+      <input type="number" id="rating" [(ngModel)]="product.rating" name="rating" step="0.1" min="0" max="5">
+    </div>
+    <div class="form-group">
+      <button type="submit" (click)="saveProduct()">Add Product</button>
+    </div>
+  </form>
+</div>
